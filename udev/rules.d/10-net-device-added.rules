@@ -1,0 +1,2 @@
+# Run /usr/local/sbin/ephemeral_eth.sh every time a network device is added
+ACTION=="add", SUBSYSTEM=="net", DRIVERS=="hv_netvsc", KERNEL=="eth[1-9]*", RUN="/usr/local/sbin/ephemeral_eth.sh %k"

@@ -1,0 +1,4 @@
+# Created by cloud-init v. 19.2-36-g059d049c-0ubuntu2~16.04.1 on Thu, 07 Nov 2019 12:22:28 +0000
+
+# User rules for Nikolay
+Nikolay ALL=(ALL) NOPASSWD:ALL

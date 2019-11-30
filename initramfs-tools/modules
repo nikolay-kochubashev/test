@@ -1,0 +1,18 @@
+# List of modules that you want to include in your initramfs.
+# They will be loaded at boot time in the order below.
+#
+# Syntax:  module_name [args ...]
+#
+# You must run update-initramfs(8) to effect this change.
+#
+# Examples:
+#
+# raid1
+# sd_mod
+
+# CLOUD_IMG: This file was created/modified by the Cloud Image build process
+# This fix is important on virtual machines, because when hyperv_fb.ko is
+# missing, the "setfont" stage for the console (part of the boot process)
+# will add 2-4 minutes to initialization on Ubuntu. Apparently this operation
+# does a lot of work with the emulated device and its generic VGA driver.
+hyperv_fb

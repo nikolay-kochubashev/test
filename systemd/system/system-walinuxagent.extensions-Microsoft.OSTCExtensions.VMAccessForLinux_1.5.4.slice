@@ -1,0 +1,7 @@
+
+[Unit]
+Description=Slice for extension Microsoft.OSTCExtensions.VMAccessForLinux-1.5.4
+DefaultDependencies=no
+Before=slices.target
+Requires=system-walinuxagent.extensions.slice
+After=system-walinuxagent.extensions.slice
